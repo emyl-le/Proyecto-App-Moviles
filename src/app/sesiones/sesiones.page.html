@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Sesiones de meditación</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let sesion of sesiones">
+      <ion-label>
+        <h2>{{ sesion.nombre }}</h2>
+        <p>{{ sesion.duracion }} - {{ sesion.tipo }}</p>
+      </ion-label>
+      <ion-button slot="end" (click)="iniciarSesion(sesion)">Iniciar</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

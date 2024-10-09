@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <h2>{{ usuario.nombre }}</h2>
+  <p>Sonidos preferidos: {{ usuario.preferencias.sonidos }}</p>
+  <p>Notificaciones activadas: {{ usuario.preferencias.notificaciones ? 'Sí' : 'No' }}</p>
+
+  <ion-button expand="block">Editar Preferencias</ion-button>
+</ion-content>

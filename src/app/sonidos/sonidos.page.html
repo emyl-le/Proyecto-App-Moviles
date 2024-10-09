@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Sonidos personalizados</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let sonido of sonidos">
+      <ion-label>
+        <h2>{{ sonido.nombre }}</h2>
+        <p>{{ sonido.categoria }}</p>
+      </ion-label>
+      <ion-button slot="end" (click)="reproducirSonido(sonido)">Escuchar</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

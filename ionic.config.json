@@ -1,0 +1,7 @@
+{
+  "name": "bienestar-mental",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

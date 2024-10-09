@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>seguimiento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <h2>Progreso</h2>
+  <p>Sesiones de meditación completadas: {{ progreso.meditacion }}</p>
+  <p>Ejercicios de respiración completados: {{ progreso.respiracion }}</p>
+
+  <ion-button expand="block">Ver Recomendaciones</ion-button>
+</ion-content>
